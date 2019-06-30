@@ -41,15 +41,16 @@ class Solution:
         #     return partition * base
         # return partition
         # 3. 事实上还可以采用二进制分解指数的方式求解
-        # 如 2^10 = 2^8 * 2^2 变为 0b1010 = 2^0b1000 * 2^0b10 => x << 8 * 2 << 2
+        # 如 3^7 = 3^4 * 3^1 变为 0b101 = 3^0b100 * 3^0b1 = 3^4 * 3^1
         if exponent == 0:
             return 1
         negative, result = exponent < 0, 1
         exponent = abs(exponent)
         while exponent > 0:
             if exponent & 0b1 == 1:
-                result *= base
-            result *= result
+                result *= base  # 累加
+            print(base)
+            base *= base  # 该位所代表的值向上升一倍 (2的指数，每进位一次，即每次翻倍)
             exponent = exponent >> 1
         return 1.0 / result if negative else result
 

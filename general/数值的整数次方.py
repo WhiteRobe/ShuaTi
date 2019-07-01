@@ -7,12 +7,16 @@
 思路:
     详见下
 样例输入:
+    0 0
+    0 7
     2 10
     8 1
     7 0
     2 9
     2 -3
 样例输出：
+    1
+    0
     1024
     8
     1
@@ -42,14 +46,11 @@ class Solution:
         # return partition
         # 3. 事实上还可以采用二进制分解指数的方式求解
         # 如 3^7 = 3^4 * 3^1 变为 0b101 = 3^0b100 * 3^0b1 = 3^4 * 3^1
-        if exponent == 0:
-            return 1
         negative, result = exponent < 0, 1
         exponent = abs(exponent)
         while exponent > 0:
             if exponent & 0b1 == 1:
                 result *= base  # 累加
-            print(base)
             base *= base  # 该位所代表的值向上升一倍 (2的指数，每进位一次，即每次翻倍)
             exponent = exponent >> 1
         return 1.0 / result if negative else result
@@ -57,6 +58,8 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
+    assert s.Power(0, 0) == 1  # 按C语言库的标准，该值为1
+    assert s.Power(0, 7) == 0
     assert s.Power(2, 10) == 1024
     assert s.Power(8, 1) == 8
     assert s.Power(7, 0) == 1

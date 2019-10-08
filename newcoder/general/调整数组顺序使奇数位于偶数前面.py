@@ -27,13 +27,9 @@ class Solution:
         # write code here
         odd, even, length = [], [], len(array)
         for i in range(length):
-            # 等价于：odd.append(array[i]) if array[i] & 0b1 == 1 else even.append(array[i])
+            # 等价于：
+            # odd.append(array[i]) if array[i] & 0b1 == 1 else even.append(array[i])
             res = odd if self.baseline(array[i]) else even
             res.append(array[i])
         return odd + even
 
-
-# if __name__ == '__main__':
-#     s = Solution()
-#     assert s.reOrderArray([1, 2, 3, 4, 5, 6, 7]) == [1, 3, 5, 7, 2, 4, 6]
-#     assert s.reOrderArray([2, 4, 6, 1, 3, 5, 7]) == [1, 3, 5, 7, 2, 4, 6]

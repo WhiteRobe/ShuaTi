@@ -19,17 +19,10 @@ class Solution:
         # write code here
         if n <= 1:
             return n
-        # return self.Fibonacci(n-2) + self.Fibonacci(n-1) # 会超时，递归方式求解会重复求值
+        # return self.Fibonacci(n-2) + self.Fibonacci(n-1) 
+        # 以上方法会超时，递归方式求解会重复求值
         dec_one, dec_two = 1, 0
         for i in range(n-2):
             dec_one, dec_two = dec_one + dec_two, dec_one
         return dec_one + dec_two
 
-
-if __name__ == '__main__':
-    s= Solution()
-    assert s.fibonacci(0) == 0
-    assert s.fibonacci(1) == 1
-    assert s.fibonacci(2) == 1
-    assert s.fibonacci(3) == 2
-    assert s.fibonacci(4) == 3

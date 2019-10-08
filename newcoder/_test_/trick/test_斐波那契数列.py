@@ -1,5 +1,5 @@
 import unittest
-from trick import 斐波那契数列 as tT
+from newcoder.trick import 斐波那契数列 as tT
 
 
 class TestFunc(unittest.TestCase):

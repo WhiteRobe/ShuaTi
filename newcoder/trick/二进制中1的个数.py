@@ -28,11 +28,11 @@ class Solution:
         return count
 
 
-if __name__ == '__main__':
-    s = Solution()
-    assert s.NumberOf1(9) == 2
-    assert s.NumberOf1(-1) == 32
-    # print(s.NumberOf1(-1))
-    # print(9, bin(9))
-    # print(-1, bin(-1), bin(-1 & 0xffffffff))
-    # print(-0b010, bin(-0b010 & 0b1111), -0b010 & 0b1111)
+# if __name__ == '__main__':
+#     s = Solution()
+#     assert s.NumberOf1(9) == 2
+#     assert s.NumberOf1(-1) == 32
+#     # print(s.NumberOf1(-1))
+#     # print(9, bin(9))
+#     # print(-1, bin(-1), bin(-1 & 0xffffffff))
+#     # print(-0b010, bin(-0b010 & 0b1111), -0b010 & 0b1111)

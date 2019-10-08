@@ -14,10 +14,10 @@
 
 
 # 已知
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
 
 class Solution:
@@ -40,14 +40,14 @@ class Solution:
         # return self.printListFromTailToHead(listNode.next) + [listNode.val]
 
 
-if __name__ == '__main__':
-
-    head = ListNode(1)
-    c = head
-    c.next = ListNode(2)
-    c = c.next
-    c.next = ListNode(3)
-    c = None
-
-    assert Solution().printListFromTailToHead(head) == [3, 2, 1]
-    assert Solution().printListFromTailToHead(None) == []
+# if __name__ == '__main__':
+#
+#     head = ListNode(1)
+#     c = head
+#     c.next = ListNode(2)
+#     c = c.next
+#     c.next = ListNode(3)
+#     c = None
+#
+#     assert Solution().printListFromTailToHead(head) == [3, 2, 1]
+#     assert Solution().printListFromTailToHead(None) == []

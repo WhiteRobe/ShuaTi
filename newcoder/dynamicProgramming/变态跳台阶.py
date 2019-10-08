@@ -12,10 +12,10 @@ class Solution:
 # 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
 
 
-if __name__ == '__main__':
-    s = Solution()
-    assert s.jumpFloorII(1) == 1
-    assert s.jumpFloorII(2) == 2
-    assert s.jumpFloorII(3) == 4
-    assert s.jumpFloorII(4) == 8
-    assert s.jumpFloorII(5) == 16
+# if __name__ == '__main__':
+#     s = Solution()
+#     assert s.jumpFloorII(1) == 1
+#     assert s.jumpFloorII(2) == 2
+#     assert s.jumpFloorII(3) == 4
+#     assert s.jumpFloorII(4) == 8
+#     assert s.jumpFloorII(5) == 16

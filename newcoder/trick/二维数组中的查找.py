@@ -30,18 +30,19 @@ class Solution:
         if rows == 1:
             return False
         for i in range(rows-1, -1, -1):
-            if array[i][0] <= target:
-                for j in range(cols):
-                    if array[i][j] == target:
-                        return True
-                    elif array[i][j] > target:
-                        break
+            if target < array[i][0]:
+                continue
+            for j in range(cols):
+                if target == array[i][j]:
+                    return True
+                elif target < array[i][j]:
+                    break
         return False
 
 
-if __name__ == '__main__':
-    s = Solution()
-    assert s.Find(6, [[1, 2, 3], [5, 6, 10], [7, 9, 11], [8, 10, 12]]) is True
-    assert s.Find(6, [[1, 5, 7, 8], [2, 6, 9, 10], [3, 10, 11, 12]]) is True
-    assert s.Find(7, [[]]) is False
+# if __name__ == '__main__':
+#     s = Solution()
+#     assert s.Find(6, [[1, 2, 3], [5, 6, 10], [7, 9, 11], [8, 10, 12]]) is True
+#     assert s.Find(6, [[1, 5, 7, 8], [2, 6, 9, 10], [3, 10, 11, 12]]) is True
+#     assert s.Find(7, [[]]) is False
 

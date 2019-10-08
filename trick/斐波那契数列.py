@@ -15,7 +15,7 @@
 
 
 class Solution:
-    def Fibonacci(self, n):
+    def fibonacci(self, n):
         # write code here
         if n <= 1:
             return n
@@ -28,8 +28,8 @@ class Solution:
 
 if __name__ == '__main__':
     s= Solution()
-    assert s.Fibonacci(0) == 0
-    assert s.Fibonacci(1) == 1
-    assert s.Fibonacci(2) == 1
-    assert s.Fibonacci(3) == 2
-    assert s.Fibonacci(4) == 3
+    assert s.fibonacci(0) == 0
+    assert s.fibonacci(1) == 1
+    assert s.fibonacci(2) == 1
+    assert s.fibonacci(3) == 2
+    assert s.fibonacci(4) == 3

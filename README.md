@@ -3,6 +3,7 @@
 ![](https://img.shields.io/badge/python-2.7|3.6-blue.svg)
 ![](https://img.shields.io/badge/java-1.8-blue.svg)
 ![](https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg)
+<img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master'>
 
 > 随缘记录刷题日常，主要编程语言是python或者java，毕竟方便。
 

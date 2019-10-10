@@ -1,7 +1,6 @@
 # 刷题日常
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/WhiteRobe/ShuaTi/blob/master/LICENSE)
 ![](https://img.shields.io/badge/python-2.7|3.6-blue.svg)
-![](https://img.shields.io/badge/java-1.8-blue.svg)
 ![](https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg)
 <img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master'>
 

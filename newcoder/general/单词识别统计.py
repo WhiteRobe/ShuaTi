@@ -1,5 +1,5 @@
 # 牛客网
-# @See https://www.nowcoder.com/practice/16f59b169d904f8898d70d81d4a140a0?tpId=94&&tqId=31064&rp=1&ru=/activity/oj&qru=/ta/bit-kaoyan/question-ranking
+# @See https://www.nowcoder.com/practice/16f59b169d904f8898d70d81d4a140a0
 # 输入一个英文句子，把句子中的单词(不区分大小写)按出现次数按从多到少把单词和次数在屏幕上输出来，
 #   要求能识别英文句号和逗号，即是说单词由空格、句号和逗号隔开。(按字典序排、同字典序的按出现次数从多到少)
 # 输入有若干行，总计不超过1000个字符。 __ 使用input()输入

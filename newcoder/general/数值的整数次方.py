@@ -1,7 +1,7 @@
 """
 题目来源：
     牛客网
-    @See https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00?tpId=13&tqId=11165&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
+    @See https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c002
 题目描述
     给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。(求base的exponent次方可以为负)
 思路:

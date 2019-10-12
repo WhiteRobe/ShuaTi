@@ -65,9 +65,9 @@ class Solution:
         self.view(root.right)
 
 
-if __name__ == '__main__':
-    pot = [1, 2, 4, 7, 3, 5, 6, 8]
-    iot = [4, 7, 2, 1, 5, 3, 8, 6]
-    s = Solution()
-    print(s.build(pot, iot))
-    s.view(s.build(pot, iot))
+# if __name__ == '__main__':
+#     pot = [1, 2, 4, 7, 3, 5, 6, 8]
+#     iot = [4, 7, 2, 1, 5, 3, 8, 6]
+#     s = Solution()
+#     print(s.build(pot, iot))
+#     s.view(s.build(pot, iot))

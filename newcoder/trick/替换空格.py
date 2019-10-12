@@ -46,6 +46,3 @@ class Solution:
         # return ''.join(s)
 
 
-if __name__ == '__main__':
-    s = Solution()
-    assert s.replaceSpace('We Are Happy') == 'We%20Are%20Happy'

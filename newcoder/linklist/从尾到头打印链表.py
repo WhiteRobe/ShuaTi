@@ -6,7 +6,8 @@
 题目描述
     输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
 思路:
-    @See https://blog.csdn.net/Shenpibaipao/article/details/72669323
+    1. 倒序链表： @See https://blog.csdn.net/Shenpibaipao/article/details/72669323
+    2. 使用栈
 样例输入:
     (1) -> (2) -> (3) -> None # 详见class ListNode
 样例输出：
@@ -23,7 +24,7 @@
 
 class Solution:
     # 返回从尾部到头部的列表值序列，例如[1,2,3]
-    def printListFromTailToHead(self, listNode):
+    def printListFromTailToHead(self, listNode):  # 采用倒序链表的形式
         # write code here
         before, head, result = None, None, []
         while listNode:

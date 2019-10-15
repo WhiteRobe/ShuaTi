@@ -1,5 +1,5 @@
 import unittest
-from newcoder.linklist import 链表倒序 as tT
+from newcoder.linklist import 从尾到头打印链表 as tT
 
 
 class ListNode:

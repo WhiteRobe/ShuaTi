@@ -3,6 +3,7 @@
     牛客网
     @See https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6
     @wiki https://zh.wikipedia.org/wiki/%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86
+    剑指offer 题6
 题目描述:
     输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
     假设输入的前序遍历和中序遍历的结果中都不含重复的数字。

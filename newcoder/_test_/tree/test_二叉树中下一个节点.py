@@ -1,5 +1,5 @@
 import unittest
-from newcoder.tree import 二叉树中下一个节点出现的次数 as tT
+from newcoder.tree import 二叉树中下一个节点 as tT
 
 
 TreeLinkNode = tT.TreeLinkNode

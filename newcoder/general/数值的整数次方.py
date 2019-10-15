@@ -2,6 +2,7 @@
 题目来源：
     牛客网
     @See https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c002
+    剑指offer 题11
 题目描述
     给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。(求base的exponent次方可以为负)
 思路:
@@ -25,6 +26,8 @@
 """
 
 import math
+
+
 class Solution:
     def Power(self, base, exponent):
         # write code here

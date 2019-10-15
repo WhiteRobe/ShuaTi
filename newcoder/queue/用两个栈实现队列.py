@@ -4,6 +4,7 @@
     @See https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6
 题目描述:
     用两个栈来实现一个队列，完成队列的Push/appendTail和Pop/deleteHead操作。 队列中的元素为int类型。
+    剑指offer 题7
 思路:
     栈：  先进后出
     队列：先进先出

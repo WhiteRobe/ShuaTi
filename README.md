@@ -1,11 +1,12 @@
 <h1 align="center">刷题日常</h1>
 <p align="center">
 	<a href="https://github.com/WhiteRobe/ShuaTi/blob/master/LICENSE"><img src='https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000' alt='License'/></a>
-    <img src='https://img.shields.io/badge/python-3.5~3.7-blue.svg' alt='python-versiont'/>
+    <img src='https://img.shields.io/badge/python-3.6|3.7-blue.svg' alt='python-versiont'/>
     <img src='https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg' alt='last-commit'/>
     <img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master' alt='bettercoder'/>
     <img src='https://www.travis-ci.org/WhiteRobe/ShuaTi.svg?branch=master' alt='travis'/>
     <a href='https://coveralls.io/github/WhiteRobe/ShuaTi?branch=master'><img src='https://coveralls.io/repos/github/WhiteRobe/ShuaTi/badge.svg?branch=master' alt='Coverage Status' /></a>
+    <a href="https://zenodo.org/badge/latestdoi/193317549"><img src="https://zenodo.org/badge/193317549.svg" alt="DOI"></a>
 </p>
 
 

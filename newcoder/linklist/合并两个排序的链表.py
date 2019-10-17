@@ -21,10 +21,7 @@
 class Solution:
     # 返回合并后列表
     def Merge(self, pHead1, pHead2):
-        nodes = {
-            0: pHead1,
-            1: pHead2
-        }
+        nodes = {0: pHead1, 1: pHead2}
 
         head, current = None, None
         while nodes[0] or nodes[1]:
@@ -40,11 +37,7 @@ class Solution:
             current.next = small_one
             current = current.next
 
-            if nodes[0] is None:
-                current.next = nodes[1]
-                break
-            elif nodes[1] is None:
-                current.next = nodes[0]
+            if self.deal_remain(current, nodes):
                 break
 
         return head
@@ -55,5 +48,9 @@ class Solution:
         except Exception:
             return (n1, 0) if n1 else (n2, 1)
 
-
-
+    def deal_remain(self, current, nodes):
+        if nodes[0] is None:
+            current.next = nodes[1]
+        elif nodes[1] is None:
+            current.next = nodes[0]
+        return not (nodes[0] and nodes[1])

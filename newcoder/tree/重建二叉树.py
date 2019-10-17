@@ -57,6 +57,7 @@ class Solution:
     def reConstructBinaryTree(self, pre, tin):
         return self.build(pre, tin)
 
+    """
     def view(self, root):
         # 先序遍历
         if root is None:
@@ -64,6 +65,7 @@ class Solution:
         print(root.val)
         self.view(root.left)
         self.view(root.right)
+    """
 
 
 # if __name__ == '__main__':

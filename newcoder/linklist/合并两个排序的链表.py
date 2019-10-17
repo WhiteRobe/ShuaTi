@@ -26,9 +26,7 @@ class Solution:
         head, current = None, None
         while nodes[0] or nodes[1]:
             small_one, index = self.choose_smaller_one(nodes[0], nodes[1])
-            if small_one is None:
-                break
-            elif head is None:
+            if head is None:
                 head = small_one
                 current = head
 

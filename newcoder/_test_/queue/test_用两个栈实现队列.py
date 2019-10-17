@@ -21,6 +21,13 @@ class TestCase(unittest.TestCase):
         assert q.delete_head() == 3
         assert q.delete_head() == 1
 
+    def test_clean_func(self):
+        q = tT.Solution()
+        q.push(1)
+        assert q.pop() == 1
+        q.sa.clean()
+        assert q.sa.empty()
+
 
 if __name__ == '__main__':
     unittest.main()

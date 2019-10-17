@@ -1,10 +1,19 @@
-# 刷题日常
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/WhiteRobe/ShuaTi/blob/master/LICENSE)
-![](https://img.shields.io/badge/python-2.7|3.6-blue.svg)
-![](https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg)
-<img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master'>
+<h1 align="center">刷题日常</h1>
+<p align="center">
+	<a href="https://github.com/WhiteRobe/ShuaTi/blob/master/LICENSE"><img src='https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000' alt='License'/></a>
+    <img src='https://img.shields.io/badge/python-3.4~3.7-blue.svg' alt='python-versiont'/>
+    <img src='https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg' alt='last-commit'/>
+    <img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master' alt='bettercoder'/>
+    <img src='https://www.travis-ci.org/WhiteRobe/ShuaTi.svg?branch=master' alt='travis'/>
+</p>
 
-> 随缘记录刷题日常，主要编程语言是python或者java，毕竟方便。
+
+> 记录刷题日常，主要编程语言是python。
+>
+> - 仓库中所有代码均进行代码质量检测
+> - 所有代码均经过CI测试
+> - 所有代码均附带链接地址和测试样例
+> - 所有代码均附带解题思路
 
 ## 题目来源
 **1. 牛客网**

@@ -1,7 +1,7 @@
 <h1 align="center">刷题日常</h1>
 <p align="center">
 	<a href="https://github.com/WhiteRobe/ShuaTi/blob/master/LICENSE"><img src='https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000' alt='License'/></a>
-    <img src='https://img.shields.io/badge/python-3.4~3.7-blue.svg' alt='python-versiont'/>
+    <img src='https://img.shields.io/badge/python-3.5~3.7-blue.svg' alt='python-versiont'/>
     <img src='https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg' alt='last-commit'/>
     <img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master' alt='bettercoder'/>
     <img src='https://www.travis-ci.org/WhiteRobe/ShuaTi.svg?branch=master' alt='travis'/>

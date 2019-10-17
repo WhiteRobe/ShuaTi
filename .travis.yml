@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.4"
+  # - "3.4"
   - "3.5"
   - "3.6"      # current default Python on Travis CI
   - "3.7"
@@ -8,8 +8,12 @@ python:
 # install:
 #   - pip install -r requirements.txt
 # command to run tests
+install:
+  - pip install pytest-cov
+  - pip install coveralls
 script:
   # - set PYTHONPATH=./ # Remember to set environment variable `$PYTHONPATH = ./ on` Travis.org
   # - pytest
-  - pytest --cov
+  - pytest --cov=./newcoder --cov=./leetcode 
+after_success:
   - coveralls

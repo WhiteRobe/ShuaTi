@@ -2,7 +2,7 @@ import unittest
 from newcoder.queue import 用两个栈实现队列 as tT
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     def test_queue(self):
         q = tT.Solution()
         q.append_tail(1)

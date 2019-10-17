@@ -3,10 +3,10 @@ from newcoder.linklist import 合并两个排序的链表 as tT
 
 
 def datasets(end=10):
-    nodes1 = [MyTestCase.ListNode(i) for i in range(0, end, 2)]
+    nodes1 = [TestCase.ListNode(i) for i in range(0, end, 2)]
     for i in range(len(nodes1)-1):
         nodes1[i].next = nodes1[i + 1]
-    nodes2 = [MyTestCase.ListNode(i) for i in range(1, end, 2)]
+    nodes2 = [TestCase.ListNode(i) for i in range(1, end, 2)]
     for i in range(len(nodes2)-1):
         nodes2[i].next = nodes2[i + 1]
     return nodes1[0], nodes2[0]
@@ -20,7 +20,7 @@ def to_array(head):
     return result
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     class ListNode:
         def __init__(self, x):
             self.val = x

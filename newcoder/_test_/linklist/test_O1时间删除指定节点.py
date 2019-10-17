@@ -3,7 +3,7 @@ from newcoder.linklist import O1时间删除指定节点 as tT
 
 
 def datasets(end=7):
-    nodes = [MyTestCase.ListNode(i) for i in range(0, end)]
+    nodes = [TestCase.ListNode(i) for i in range(0, end)]
     for i in range(end-1):
         nodes[i].next = nodes[i+1]
     return nodes[0], nodes
@@ -17,7 +17,7 @@ def to_array(head):
     return result
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     class ListNode:
         def __init__(self, x):
             self.val = x
@@ -39,14 +39,14 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(to_array(s.delete(head, nodes[6])), [0, 1, 2, 3, 4, 5])
 
     def test_delete_only_one(self):
-        node = MyTestCase.ListNode(0)
+        node = TestCase.ListNode(0)
         s = tT.Solution()
         self.assertEqual(to_array(s.delete(node, node)), [])
 
     def test_delete_not_in_linklist(self):
         head, nodes = datasets()
         head_2, nodes_2 = datasets(end=20)
-        node_single = MyTestCase.ListNode(9)
+        node_single = TestCase.ListNode(9)
         s = tT.Solution()
         self.assertEqual(to_array(s.delete(head, nodes_2[10])), [0, 1, 2, 3, 4, 5, 6])
         self.assertEqual(to_array(s.delete(head, node_single)), [0, 1, 2, 3, 4, 5, 6])

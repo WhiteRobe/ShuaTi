@@ -11,7 +11,7 @@ def to_array(head):
 
 
 def datasets():
-    nodes = [MyTestCase.ListNode(i) for i in range(0, 6)]
+    nodes = [TestCase.ListNode(i) for i in range(0, 6)]
     nodes[0].next = nodes[1]
     nodes[1].next = nodes[2]
     nodes[2].next = nodes[3]
@@ -20,7 +20,7 @@ def datasets():
     return nodes[0]
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     class ListNode:
         def __init__(self, x):
             self.val = x
@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_one_element(self):
         s = tT.Solution()
-        head = s.ReverseList(MyTestCase.ListNode(0))
+        head = s.ReverseList(TestCase.ListNode(0))
         self.assertEqual(to_array(head), [0])
 
     def test_empty(self):

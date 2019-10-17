@@ -49,7 +49,7 @@ def datasets_3():
     return treenodes
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     def test_GetNext_1(self):
         s = tT.Solution()
         ds = datasets_1()

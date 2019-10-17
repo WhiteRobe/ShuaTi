@@ -2,7 +2,7 @@ import unittest
 from newcoder.sort_search import 旋转数组的最小数字 as tT
 
 
-class MyTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
     def test_empty_input(self):
         s = tT.Solution()
         self.assertEqual(0, s.minNumberInRotateArray([]))

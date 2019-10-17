@@ -3,7 +3,6 @@ from newcoder.linklist import 链表中倒数第k个结点 as tT
 
 
 def get_data():
-
     class ListNode:
         def __init__(self, x):
             self.val = x

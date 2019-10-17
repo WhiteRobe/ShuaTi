@@ -5,6 +5,7 @@
     <img src='https://img.shields.io/github/last-commit/WhiteRobe/ShuaTi.svg' alt='last-commit'/>
     <img src='https://bettercodehub.com/edge/badge/WhiteRobe/ShuaTi?branch=master' alt='bettercoder'/>
     <img src='https://www.travis-ci.org/WhiteRobe/ShuaTi.svg?branch=master' alt='travis'/>
+    <a href='https://coveralls.io/github/WhiteRobe/ShuaTi?branch=master'><img src='https://coveralls.io/repos/github/WhiteRobe/ShuaTi/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
 

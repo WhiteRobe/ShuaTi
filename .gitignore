@@ -122,6 +122,8 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+.coveralls.yml
+
 # Translations
 *.mo
 *.pot

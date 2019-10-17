@@ -10,4 +10,6 @@ python:
 # command to run tests
 script:
   # - set PYTHONPATH=./ # Remember to set environment variable `$PYTHONPATH = ./ on` Travis.org
-  - pytest
+  # - pytest
+  - pytest --cov
+  - coveralls

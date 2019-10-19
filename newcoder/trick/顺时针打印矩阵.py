@@ -30,31 +30,25 @@ class Solution:
             delta_x = 1 if c_d == 1 else (-1 if c_d == 3 else 0)
             delta_y = 1 if c_d == 0 else (-1 if c_d == 2 else 0)
 
-            fr, to = self.select_from_to(c_d, top, right, bottom, left)
+            fr, to = self.select_from_to(c_d, (top, right, bottom, left))
 
             for _ in range(fr+delta_x+delta_y, to, delta_x+delta_y):
                 # index = 1 if abs(delta_x) else 0
                 c[0 if abs(delta_x) else 1] = _  # 上下移动时
-                print(delta_x, delta_y, fr, to, c)
                 results.append(matrix[c[0]][c[1]])
 
-            c_d, top, right, bottom, left = self.shrink(c_d, top, right, bottom, left)
+            c_d, top, right, bottom, left = self.shrink(c_d, (top, right, bottom, left))
 
         if should_print:
             self.out_print(results)
 
         return results
 
-    def select_from_to(self, direction, top, right, bottom, left):
+    def select_from_to(self, direction, boundary):
         """
         选择正确的遍历方向
-        :param direction:
-        :param top:
-        :param right:
-        :param bottom:
-        :param left:
-        :return:
         """
+        top, right, bottom, left = boundary
         if direction == 0:
             return left, right
         elif direction == 1:
@@ -64,16 +58,11 @@ class Solution:
         elif direction == 3:
             return bottom, top
 
-    def shrink(self, direction, top, right, bottom, left):
+    def shrink(self, direction, boundary):
         """
         尺度放缩
-        :param direction: 当前方向
-        :param top:
-        :param right:
-        :param bottom:
-        :param left:
-        :return:
         """
+        top, right, bottom, left = boundary
         if direction == 0:
             top += 1
         elif direction == 1:

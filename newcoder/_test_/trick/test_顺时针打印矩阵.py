@@ -21,7 +21,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_empty(self):
         s = tT.Solution()
-        self.assertEqual(s.printMatrix([[]], should_print=False), [])
+        self.assertEqual(s.printMatrix([[]], should_print=True), [])
 
     def test_one_row(self):
         s = tT.Solution()

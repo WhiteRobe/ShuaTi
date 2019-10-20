@@ -1,5 +1,5 @@
 import unittest
-from leetcode.array import 无重复字符的最长字串 as tT
+from leetcode.array import 无重复字符的最长字串3 as tT
 
 
 class MyTestCase(unittest.TestCase):

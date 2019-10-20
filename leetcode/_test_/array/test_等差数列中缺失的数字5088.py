@@ -1,5 +1,5 @@
 import unittest
-from leetcode.array import 等差数列中缺失的数字 as tT
+from leetcode.array import 等差数列中缺失的数字5088 as tT
 
 
 class MyTestCase(unittest.TestCase):

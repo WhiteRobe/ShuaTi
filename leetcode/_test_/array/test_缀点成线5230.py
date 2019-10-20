@@ -1,5 +1,5 @@
 import unittest
-from leetcode.array import 缀点成线 as tT
+from leetcode.array import 缀点成线5230 as tT
 
 
 class MyTestCase(unittest.TestCase):

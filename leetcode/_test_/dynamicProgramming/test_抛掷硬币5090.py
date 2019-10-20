@@ -1,5 +1,5 @@
 import unittest
-from leetcode.dynamicProgramming import 抛掷硬币 as tT
+from leetcode.dynamicProgramming import 抛掷硬币5090 as tT
 
 
 class MyTestCase(unittest.TestCase):

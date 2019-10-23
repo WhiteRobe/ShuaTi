@@ -17,42 +17,7 @@
 样例输出:
 
 """
-
-
-class Stack:
-    class Node:
-        def __init__(self, node):
-            self.val = node
-            # self.next = None
-            self.prev = None
-
-    def __init__(self):
-        self.top = None
-        self.size = 0
-
-    def push(self, node):
-        n = self.Node(node)
-        n.prev = self.top
-        self.top = n
-        self.size += 1
-
-    def pop(self):
-        popout = self.top
-        self.top = popout.prev if popout is not None else None
-        self.size = max(0, self.size-1)
-        return popout.val
-
-    def clean(self):
-        self.top = None
-        self.size = 0
-
-    def empty(self):
-        return self.size == 0
-
-    def pop_to(self, stack):
-        while self.size > 0:
-            stack.push(self.pop())
-
+from structure.stack import Stack
 
 class Solution:
     def __init__(self):

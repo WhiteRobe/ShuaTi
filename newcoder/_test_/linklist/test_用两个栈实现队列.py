@@ -1,5 +1,5 @@
 import unittest
-from newcoder.queue import 用两个栈实现队列 as tT
+from newcoder.linklist import 用两个栈实现队列 as tT
 
 
 class TestCase(unittest.TestCase):

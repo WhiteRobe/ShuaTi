@@ -2,7 +2,7 @@
 题目来源:
     牛客网
     @See https://www.nowcoder.com/practice/4c776177d2c04c2494f2555c9fcc1e49
-    题目序号 剑指offer 20
+    题目序号 剑指offer 21
 题目描述:
     定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的min函数（时间复杂度应为O（1））
 思路:
@@ -14,7 +14,7 @@
 样例输出:
     33222330
 """
-from structure.stack import Stack
+from structure.stack import ListStack as Stack
 
 
 class Solution:
@@ -24,8 +24,8 @@ class Solution:
 
     def push(self, node):
 
-        if self.main_s.size > 0:
-            self.min_s.push(min(node, self.min_s.top.val))
+        if self.main_s.size() > 0:
+            self.min_s.push(min(node, self.min_s.top()))
         else:
             self.min_s.push(node)
         self.main_s.push(node)
@@ -35,7 +35,7 @@ class Solution:
         return self.main_s.pop()
 
     def top(self):
-        return self.main_s.top.val
+        return self.main_s.top()
 
     def min(self):
-        return self.min_s.top.val
+        return self.min_s.top()

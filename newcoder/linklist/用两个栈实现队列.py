@@ -19,6 +19,7 @@
 """
 from structure.stack import Stack
 
+
 class Solution:
     def __init__(self):
         self.sa = Stack()
@@ -31,13 +32,13 @@ class Solution:
         return self.delete_head()
 
     def append_tail(self, node):
-        if self.sb.size > 0:
+        if self.sb.size() > 0:
             self.sb.pop_to(self.sa)
 
         self.sa.push(node)
 
     def delete_head(self):
-        if self.sa.size > 0:
+        if self.sa.size() > 0:
             self.sa.pop_to(self.sb)
 
         return self.sb.pop()

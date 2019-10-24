@@ -21,6 +21,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(3, s.min())
         s.push(0)
         self.assertEqual(0, s.min())
+        s.pop()
+        self.assertEqual(3, s.min())
+        s.pop()
+        self.assertEqual(None, s.min())
 
 
 if __name__ == '__main__':

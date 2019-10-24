@@ -34,7 +34,7 @@ class Solution:
             history[2] = sum(history)
             history[1] = temp
 
-        return history[number if number < 3 else 2]
+        return history[min(number, 2)]
 
     def rectCover_r(self, number):
         # 递归版本容易爆栈

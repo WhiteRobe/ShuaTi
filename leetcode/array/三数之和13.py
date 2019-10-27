@@ -36,15 +36,29 @@ class Solution:
 
             L, R = i+1, len(nums)-1
             while L < R:
-                sums = sum([n, nums[L], nums[R]])
-                if sums == 0:
-                    results.append([n, nums[L], nums[R]])
-                    L, R = self.remove_duplicate(L, R, nums)
-                elif sums < 0:
-                    L += 1
-                elif sums > 0:
-                    R -= 1
+                L, R, res = self.cal((n, L, R, nums))
+                results += res
+                # sums = sum([n, nums[L], nums[R]])
+                # if sums == 0:
+                #     results.append([n, nums[L], nums[R]])
+                #     L, R = self.remove_duplicate(L, R, nums)
+                # elif sums < 0:
+                #     L += 1
+                # elif sums > 0:
+                #     R -= 1
         return results
+
+    def cal(self, params):
+        n, L, R, nums = params
+        results, sums = [], sum([n, nums[L], nums[R]])
+        if sums == 0:
+            results.append([n, nums[L], nums[R]])
+            L, R = self.remove_duplicate(L, R, nums)
+        elif sums < 0:
+            L += 1
+        elif sums > 0:
+            R -= 1
+        return L, R, results
 
     def remove_duplicate(self, L, R, nums):
         # 过滤重复项

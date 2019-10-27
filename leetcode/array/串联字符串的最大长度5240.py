@@ -29,24 +29,16 @@ class Solution:
         arr = list(filter(lambda x: len(x) == len(set([_ for _ in x])), arr))  # 过滤重复元素
 
         # 简单排个序
-        hmap = self.get_map(arr)
-        hmap = self.get_map(sorted(hmap, key=lambda x: hmap[x], reverse=True))
+        sorted_arr = sorted(arr, key=lambda x: len(x), reverse=True)
+        arr_len = len(sorted_arr)
+        max_len = len(sorted_arr[0]) if arr_len > 0 else 0
 
-        sorted_arr = list(hmap.keys())
-        max_len = hmap[sorted_arr[0]] if len(sorted_arr) > 0 else 0
-
-        for i in range(len(hmap)):
+        for i in range(arr_len):
             s1 = set([_ for _ in sorted_arr[i]])
-            for j in range(i+1, len(hmap)):
+            for j in range(i+1, arr_len):
                 s2 = set([_ for _ in sorted_arr[j]])
                 if not s1 & s2:  # 如果是空集则延长字串
                     s1 = s1 | s2
                     max_len = max(max_len, len(s1))
 
         return max_len
-
-    def get_map(self, arr: List[str]):
-        arr_lens, hmap = list(map(lambda x: len(x), arr)), {}
-        for s, l in zip(arr, arr_lens):
-            hmap[s] = l
-        return hmap

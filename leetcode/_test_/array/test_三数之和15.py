@@ -1,5 +1,5 @@
 import unittest
-from leetcode.array import 三数之和13 as tT
+from leetcode.array import 三数之和15 as tT
 
 
 class MyTestCase(unittest.TestCase):

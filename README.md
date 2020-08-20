@@ -9,7 +9,7 @@
     <a href="https://zenodo.org/badge/latestdoi/193317549"><img src="https://zenodo.org/badge/193317549.svg" alt="DOI"></a>
 </p>
 
-**注意，本仓库已迁移至[私库Chong](https://github.com/WhiteRobe/Chong-)
+**注意，本仓库已迁移至[私库Chong](https://github.com/WhiteRobe/Chong-)**
 
 > 记录刷题日常，主要编程语言是python。
 >
